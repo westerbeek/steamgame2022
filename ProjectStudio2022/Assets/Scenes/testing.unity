@@ -258,6 +258,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: test2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d0674663cf31606409edcbd3ab6966a0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8416272007918961125, guid: d0674663cf31606409edcbd3ab6966a0,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -440,6 +445,57 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 78.283005, y: 79.50101, z: 92.365005}
+--- !u!1 &1696595848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1696595850}
+  - component: {fileID: 1696595849}
+  m_Layer: 0
+  m_Name: Dunggen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1696595849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696595848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30ebce9659a39ea4794010287f6b80ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startroom: {fileID: 2883020180845673888, guid: 4546b72b0e54ce441835fe084ce5e6e5,
+    type: 3}
+  rooms:
+  - {fileID: 8034512523602430103, guid: f7dd1dfd2b76c27459e85aaa8e76d872, type: 3}
+  bossroom: {fileID: 3417634867817557410, guid: 13b30e0440d19b4489d78de25b4d136c,
+    type: 3}
+  numofrooms: 20
+  spawnpoints: []
+--- !u!4 &1696595850
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696595848}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1792717269
 GameObject:
   m_ObjectHideFlags: 0
