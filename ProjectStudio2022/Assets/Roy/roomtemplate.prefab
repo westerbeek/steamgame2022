@@ -756,7 +756,7 @@ GameObject:
   - component: {fileID: 3063577265604431729}
   - component: {fileID: 5664913361028931427}
   - component: {fileID: 4690597458085112893}
-  - component: {fileID: 5240460499405791934}
+  - component: {fileID: 2758351982891043499}
   m_Layer: 0
   m_Name: spawndown
   m_TagString: roomspawns
@@ -793,7 +793,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2039725636058336502}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -838,7 +838,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5240460499405791934
+--- !u!114 &2758351982891043499
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -847,7 +847,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2039725636058336502}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c49191746e6b7554fa1cd9d8ae180f8a, type: 3}
+  m_Script: {fileID: 11500000, guid: 36e6faeaab0979246872be208db417e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2283373710324433836
@@ -1513,7 +1513,7 @@ GameObject:
   - component: {fileID: 6132519889627136753}
   - component: {fileID: 7054636759867465766}
   - component: {fileID: 6487030467279480397}
-  - component: {fileID: 3398588358005684896}
+  - component: {fileID: 1337552229190360704}
   m_Layer: 0
   m_Name: spawnup
   m_TagString: roomspawns
@@ -1550,7 +1550,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2912317140697618658}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1595,7 +1595,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3398588358005684896
+--- !u!114 &1337552229190360704
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1604,7 +1604,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2912317140697618658}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c49191746e6b7554fa1cd9d8ae180f8a, type: 3}
+  m_Script: {fileID: 11500000, guid: 36e6faeaab0979246872be208db417e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &3155772092916712941
@@ -1898,7 +1898,7 @@ GameObject:
   - component: {fileID: 6998861465978391327}
   - component: {fileID: 2672356306812394415}
   - component: {fileID: 5114996164985663739}
-  - component: {fileID: 2495083976461151205}
+  - component: {fileID: 1948245131670321923}
   m_Layer: 0
   m_Name: spawnright
   m_TagString: roomspawns
@@ -1935,7 +1935,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4063882175414750293}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1980,7 +1980,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2495083976461151205
+--- !u!114 &1948245131670321923
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1989,7 +1989,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4063882175414750293}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c49191746e6b7554fa1cd9d8ae180f8a, type: 3}
+  m_Script: {fileID: 11500000, guid: 36e6faeaab0979246872be208db417e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4208114464812069271
@@ -3413,7 +3413,7 @@ GameObject:
   - component: {fileID: 1483172110469138610}
   - component: {fileID: 1147737957276080407}
   - component: {fileID: 3800026337355590158}
-  - component: {fileID: 4572472071918712927}
+  - component: {fileID: 577394490393134279}
   m_Layer: 0
   m_Name: spawnleft
   m_TagString: roomspawns
@@ -3450,7 +3450,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7892893939058906609}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3495,7 +3495,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4572472071918712927
+--- !u!114 &577394490393134279
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3504,7 +3504,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7892893939058906609}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c49191746e6b7554fa1cd9d8ae180f8a, type: 3}
+  m_Script: {fileID: 11500000, guid: 36e6faeaab0979246872be208db417e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8034512523602430103
@@ -3518,6 +3518,7 @@ GameObject:
   - component: {fileID: 4229498108641404510}
   - component: {fileID: 3326406863291106629}
   - component: {fileID: 134700188214612133}
+  - component: {fileID: -5057883517886941060}
   m_Layer: 0
   m_Name: roomtemplate
   m_TagString: room
@@ -3595,7 +3596,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 12, y: 12, z: 12}
+  m_Size: {x: 10, y: 10, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &134700188214612133
 Rigidbody:
@@ -3613,6 +3614,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &-5057883517886941060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8034512523602430103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23fda14f5c35c234fb2e223d3bac0c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawns: []
 --- !u!1 &8280146928672597371
 GameObject:
   m_ObjectHideFlags: 0

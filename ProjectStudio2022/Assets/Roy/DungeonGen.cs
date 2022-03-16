@@ -6,38 +6,63 @@ using System.IO;
 public class DungeonGen : MonoBehaviour
 {
     public GameObject startroom;
-    public GameObject[] rooms;
+    public GameObject[] rooms;//prefabs
     public GameObject bossroom;
     public int numofrooms;
 
     public List<Transform> spawnpoints;
+    public List<GameObject> roomsinscene;
 
     // Start is called before the first frame update
     void Start()
     {
-        GenerateDungeon();
+        startroomDungeon();
     }
-    void GenerateDungeon()
+    void startroomDungeon()
     {
 
-        Instantiate(startroom, new Vector3(0,0,0), Quaternion.identity);
+        roomsinscene.Add(Instantiate(startroom, new Vector3(0,0,0), Quaternion.identity));//spawns the room the player spawns in
+        getroomloc();
+    }
+    
+    void getroomloc()
+    {
+        spawnpoints = new List<Transform>();//resets de list
         foreach (GameObject go in GameObject.FindGameObjectsWithTag("roomspawns"))
         {
-            spawnpoints.Add(go.GetComponent<Transform>());
+            spawnpoints.Add(go.GetComponent<Transform>());//adds all roomspawn locations to the list
         }
-        for (int i = 0; i < numofrooms; i++)
-        {
-            int tmp = spawnpoints.Count;
-            int num = Random.Range(0, tmp);
 
-            Instantiate(rooms[0], new Vector3(spawnpoints[num].position.x, spawnpoints[num].position.y, spawnpoints[num].position.z), Quaternion.identity);
-            spawnpoints.Remove(spawnpoints[num]);
-            
-            foreach (GameObject go in GameObject.FindGameObjectsWithTag("roomspawns"))
+        generateroom();
+    }
+    
+    void generateroom()
+    {
+
+        if (roomsinscene.Count < numofrooms) {
+            bool safe = true;
+            int num = Random.Range(0, spawnpoints.Count);//gets random spawn point
+
+            GameObject tmpobj = Instantiate(rooms[Random.Range(0, rooms.Length)], new Vector3(spawnpoints[num].position.x, spawnpoints[num].position.y, spawnpoints[num].position.z), Quaternion.identity);
+            for (int i = 0; i < roomsinscene.Count; i++)
             {
-                spawnpoints.Add(go.GetComponent<Transform>());
+                if(tmpobj.transform.position == roomsinscene[i].transform.position)// looks throuhg all rooms if there is already a room on location
+                {
+                    safe = false;
+                    Destroy(tmpobj);
+                }
+            }
+            if (safe == true)
+            {
+                roomsinscene.Add(tmpobj);
+                getroomloc();
+            }
+            else//if safe == false it tries again
+            {
+                generateroom();
             }
         }
     }
 
+   
 }
