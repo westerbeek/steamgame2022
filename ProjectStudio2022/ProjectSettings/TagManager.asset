@@ -6,6 +6,10 @@ TagManager:
   tags:
   - roomspawns
   - room
+  - Enemy
+  - Friendlybullet
+  - Enemybullet
+  - Neutralbullet
   layers:
   - Default
   - TransparentFX
