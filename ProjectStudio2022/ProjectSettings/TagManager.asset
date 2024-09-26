@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - roomspawns
+  - room
+  - Enemy
+  - Friendlybullet
+  - Enemybullet
+  - Neutralbullet
   layers:
   - Default
   - TransparentFX
